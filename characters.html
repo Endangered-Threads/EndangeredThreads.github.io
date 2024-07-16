@@ -1,0 +1,174 @@
+<html>
+<head>
+    <title>Endangered Threads - Characters</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            height: 60vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #12553d;
+            padding: 10px;
+        }
+        .logo {
+            height: 90px;
+            margin-right: 20px;
+        }
+        .navbar {
+            flex: 1; 
+            text-align: center;
+        }
+        .navbar nav ul {
+            display: inline-block;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        .navbar nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+        }
+        .navbar nav ul li a:hover {
+            background-color: #298562;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .featured-products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .product {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 10px;
+        }
+        .product-info h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        .product-info p {
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #1f5f8b;
+        }
+        .character {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .character img {
+            flex: 0 0 auto; 
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .character-description {
+            flex: 1; 
+        }
+        .footer {
+            background-color: #12553d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="logo.jpeg" alt="Endangered Threads Logo" class="logo">
+            </a>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="moreinfo.html">More Info</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+     <div class="container">
+        <h2>Our Characters</h2>
+        <div class="character">
+            <img src="koala.png" alt="Koala" height="200" width="187">
+            <div class="character-description">
+                <h3>Koko the Koala</h3>
+                <p>Koko is our beloved koala who lives in Australia and represents the vulnerable koala population. Her mission is to spread awareness about habitat loss and the need for conservation. </p>
+            </div>
+        </div>
+        <div class="character">
+            <img src="tiger.png" alt="Tiger" height="230" width="192">
+            <div class="character-description">
+                <h3>Blaze the Tiger</h3>
+                <p>Blaze is Endangered Thread's fearless tiger who lives in Asia and symbolizes the endangered tigers. His goal is to educate people about the dangers of poaching and deforestation.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Endangered Threads</p>
+        <p>info@endangered-threads.net</p>
+    </footer>
+</body>
+</html>
