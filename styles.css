@@ -83,3 +83,43 @@ th {
     float: left;
     margin-right: 20px;
 }
+
+@media (max-width: 768px) {
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        flex: 1 1 100%;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+}
+
+/* General Styles for Product Images */
+.product img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .product {
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Margin for spacing */
+    }
+    .product img {
+        height: 300px; /* Fixed height for better visibility on mobile */
+    }
+}
+
+/* Media Query for Smaller Mobile Devices */
+@media (max-width: 480px) {
+    .product img {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+}
