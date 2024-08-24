@@ -123,3 +123,34 @@ th {
         height: 250px; /* Adjust height for smaller screens */
     }
 }
+
+/* Container for the products */
+.featured-products {
+    display: flex;
+    flex-wrap: wrap; /* Allows products to wrap onto multiple rows */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Individual product styling */
+.product {
+    flex: 1 1 calc(20% - 20px); /* Each product takes up 50% of the width, minus some margin */
+    margin-bottom: 20px; /* Space between rows */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Ensure images are responsive */
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+    .product {
+        flex: 1 1 100%; /* Each product takes full width on small screens */
+    }
+}
